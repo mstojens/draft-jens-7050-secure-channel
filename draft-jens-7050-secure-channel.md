@@ -19,11 +19,11 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "Redefining Secure Channel for ipv4only.arpa IPv6 Prefix Discovery"
+abbrev: "7050-secure-channel"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-jens-7050-secure-channel
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -32,9 +32,10 @@ v: 3
 area: AREA
 workgroup: WG Working Group
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - secure channel
+ - encrypted DNS
+ - DNR
+ - ipv4only.arpa
 venue:
   group: WG
   type: Working Group
@@ -45,9 +46,9 @@ venue:
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: Tommy Jensen
+    organization: Microsoft
+    email: tojens@microsoft.com
 
 normative:
 
