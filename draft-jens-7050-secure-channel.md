@@ -106,10 +106,14 @@ operators and client nodes alike.
 The original text in RFC7050 defined a DNSSEC-based mechanism for validating the
 DNS64 resolver with necessary complication to determine the name needed for
 validation. When TLS-based encrypted DNS protocols are used, there is already
-a name for the resolver known, which removes this complication. As of this
-writing, there is wide support for TLS-based encrypted DNS protocols, whereas
-there is little support for DNSSEC validation which is left to the resursive
-resolver to perform.
+a name for the resolver known, which removes this complication. This name can
+even be dynamically discovered from the network which advertises the DNS64
+server by using DNR {{!RFC9463}} so that no preconfiguration of nodes is
+required to do proper TLS server authentication of the DNS64 resolver.
+
+As of this writing, there is wide support for TLS-based encrypted DNS protocols,
+whereas there is little support for DNSSEC validation which is left to the
+resursive resolver to perform.
 
 ## Relationship to RFC8880
 
@@ -180,7 +184,10 @@ NEW TEXT:
 
    To mitigate against attacks, the node SHOULD communicate with a
    trusted DNS64 server over a secure channel. NAT64 operators SHOULD provide
-   facilities for validating discovery of Pref64::/n via a secure channel.
+   facilities for validating discovery of Pref64::/n via a secure channel,
+   including support for one or more TLS-based encrypted DNS protocols and
+   the use of DNR {{!RFC9463}} to advertise the configuration nodes need to
+   connect to and perform TLS server authentication for the DNS64 resolver.
 
 ===
 
