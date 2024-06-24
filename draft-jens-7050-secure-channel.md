@@ -82,23 +82,23 @@ defined as:
 Since {{!RFC7050}} was standardized, there have been a number of developments
 in secure DNS channels, including DoT {{!RFC7858}}, DoH {{!RFC8484}}, DoQ
 {{!RFC9250}}, and DNR {{!RFC9463}}. These are more appropriate ways to provide a
-secure channel a node can use to gain trust in the ipv4only.arpa query being
+secure channel that a node can use to gain trust in the ipv4only.arpa query being
 answered by the network's designated DNS64 {{?RFC6147}} server. This document 
-updates {{!RFC7050}} to redefine "secure channel" and requirements for networks
-and client nodes to determine the channel between the DNS64 server and the 
-client node can be considered secure for trusting the discovered IPv6
+updates {{!RFC7050}} to redefine "secure channel" and specify requirements for
+networks and client nodes to determine how the channel between the DNS64 server
+and the client node can be considered secure for trusting the discovered IPv6
 translation prefix.
 
 # Terminology
 
 Name-Validating Encrypted DNS Protocols:
    Any standardized encrypted DNS protocol that allows a DNS client to securely
-   verify that the DNS server it is communicating with is associated with a
-   domain name used with the configuration associated with the standardized
-   encrypted DNS protocol. Examples as the time of this writing include DoT
-   {{!RFC7858}}, DoH {{!RFC8484}}, and DoQ {{!RFC9250}}, which all use TLS 
-   directly, indirectly through HTTPS, or through QUIC's use of the TLS
-   handshake as described in {{?RFC9001}}.
+   verify that the DNS server that it is communicating with is configured to
+   use DNS encryption by checking the server's associated domain name.
+   Examples as of the time of this writing include DoT {{!RFC7858}}, 
+   DoH {{!RFC8484}}, and DoQ {{!RFC9250}}, which all use TLS directly, 
+   indirectly through HTTPS, or through QUIC's use of the TLS handshake as 
+   described in {{?RFC9001}}.
 
 # Explanation of changes
 
