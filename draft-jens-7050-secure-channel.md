@@ -162,14 +162,13 @@ NEW TEXT:
 
 ===
 
-   Name-Validating Encrypted DNS Protocol: Any standardized encrypted DNS
-   protocol that allows a DNS client to securely
-   verify that the DNS server it is communicating with is associated with a
-   domain name used with the configuration associated with the standardized
-   encrypted DNS protocol. Examples as the time of this writing include DoT
-   {{!RFC7858}}, DoH {{!RFC8484}}, and DoQ {{!RFC9250}}, which all use TLS 
-   directly, indirectly through HTTPS, or through QUIC's use of the TLS
-   handshake as described in {{?RFC9001}}. [Copy any changes from the corresponding section above when that is finalized -- JS]
+   Name-Validating Encrypted DNS Protocols: Any standardized encrypted DNS protocol that allows a DNS client to use a
+   DNS server's claimed hostname assignment to securely verify that
+   the server is designated for use with the specified encryption protocol.
+   Examples as of the time of this writing include DoT
+   {{!RFC7858}}, DoH {{!RFC8484}}, and DoQ {{!RFC9250}}, which all use TLS,
+   either directly, indirectly through HTTPS, or through QUIC's use of the TLS
+   handshake as described in {{?RFC9001}}.
 
    Secure Channel: A communication channel that a node has between itself and
    a DNS64 server that protects DNS protocol-related messages from
