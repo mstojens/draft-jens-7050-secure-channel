@@ -85,7 +85,7 @@ in secure DNS channels, including DoT {{!RFC7858}}, DoH {{!RFC8484}}, DoQ
 secure channel that a node can use to gain trust in the ipv4only.arpa query being
 answered by the network's designated DNS64 {{?RFC6147}} server. This document 
 updates {{!RFC7050}} to redefine "secure channel" and specify requirements for networks
-and client nodes to determine how the channel between the DNS64 server and the 
+and client nodes to determine whether the channel between the DNS64 server and the 
 client node can be considered secure for trusting the discovered IPv6
 translation prefix.
 
@@ -93,8 +93,8 @@ translation prefix.
 
 Name-Validating Encrypted DNS Protocols:
    Any standardized encrypted DNS protocol that allows a DNS client to use a
-   DNS server's claimed hostname assignement to securely verify that
-   the server is configured to use the specified encryption protocol.
+   DNS server's claimed hostname assignment to securely verify that
+   the server is designated for use with the specified encryption protocol.
    Examples as of the time of this writing include DoT
    {{!RFC7858}}, DoH {{!RFC8484}}, and DoQ {{!RFC9250}}, which all use TLS,
    either directly, indirectly through HTTPS, or through QUIC's use of the TLS
@@ -112,20 +112,21 @@ additional encryption at the link layer to provide validation of the DNS64
 resolver or protection of the DNS traffic, which only places extra burdens on
 network operators and client nodes alike. Using link-layer protection instead
 of Name-Validating Encrypted DNS Protocols also deprives the DNS client of the
-assurance that the server that it is communicating with has a valid claim to the server hostname
-that is specified by administrators in the client's encrypted DNS configuration.
+assurance that the server that it is communicating with has a valid claim to the
+server hostname that is specified by system administrators in the client's
+encrypted DNS configuration.
 
 ## Deprecating use of DNSSEC for DNS64 server validation
 
 The original text in RFC7050 defined a DNSSEC-based mechanism for validating the
 DNS64 resolver with necessary complication to determine the name needed for
-validation. When Name-Validating Encrypted DNS Protocols are used, there is a 
+validation. When Name-Validating Encrypted DNS Protocols are used, there is a
 pre-defined name for the desired resolver, which removes this complication.
 
 This name SHOULD be dynamically discovered from the network which advertises the
 DNS64 server by using DNR {{!RFC9463}} so that no preconfiguration of nodes is
 required to do proper server authentication of the DNS64 resolver. DNS
-client nodes SHOULD support DNR {{!RFC9463}} to facilitate this discovery.
+nodes SHOULD support DNR {{!RFC9463}} to facilitate this discovery.
 
 As of this writing, there is wide support for Name-Validating Encrypted DNS
 Protocols, whereas there is little support for DNSSEC validation by DNS clients,
@@ -168,13 +169,13 @@ NEW TEXT:
    encrypted DNS protocol. Examples as the time of this writing include DoT
    {{!RFC7858}}, DoH {{!RFC8484}}, and DoQ {{!RFC9250}}, which all use TLS 
    directly, indirectly through HTTPS, or through QUIC's use of the TLS
-   handshake as described in {{?RFC9001}}. [Copy any changes from the corresponding section above -- JS]
+   handshake as described in {{?RFC9001}}. [Copy any changes from the corresponding section above when that is finalized -- JS]
 
    Secure Channel: A communication channel that a node has between itself and
    a DNS64 server that protects DNS protocol-related messages from
    interception and tampering. The channel uses a Name-Validating Encrypted DNS
    Protocol that is validated against a domain name associated with the configuration
-   of the DNS64 resolver. The information that the client requires for DNS64 resolver
+   of the DNS64 resolver. The information that the client requires for DNS64-resolver
    server authentication may either be pre-configured or discovered using a mechanism 
    such as DNR {{?RFC9463}}.
 
