@@ -26,7 +26,7 @@ informative:
 
 --- abstract
 
-This document updates {{!RFC7050}} to redefine the term "secure channel" and 
+This document updates Discovery of the IPv6 Prefix Used for IPv6 Address Synthesis specification (RFC 7050) to redefine the term "secure channel" and 
 modify requirements for nodes and DNS64 servers to use more recent developments
 in DNS security.
 
@@ -38,26 +38,32 @@ in DNS security.
 {{!RFC7050}} defines a mechanism for discovery of the current network's IPv6
 address synthesis prefix that uses a DNS query for the ipv4only.arpa SUDN.
 It further provides normative requirements for nodes to use a "secure channel"
-when issuing this query in {{Section 3.1 of !RFC7050}}. "Secure channel" was
-defined as:
+when issuing this query in {{Section 3.1 of !RFC7050}}. {{Section 2.2 of !RFC7050}} defines "Secure channel" as follows:
 
-"a communication channel a node has between itself and
+{:quote}
+>  a communication channel a node has between itself and
    a DNS64 server protecting DNS protocol-related messages from
    interception and tampering.  The channel can be, for example, an
    IPsec-based virtual private network (VPN) tunnel or a link layer
-   utilizing data encryption technologies."
+   utilizing data encryption technologies.
 
-Since {{!RFC7050}} was standardized, there have been a number of developments
-in secure DNS channels, including DoT {{!RFC7858}}, DoH {{!RFC8484}}, DoQ
-{{!RFC9250}}, and DNR {{!RFC9463}}. These are more appropriate ways to provide a
-secure channel that a node can use to gain trust in the ipv4only.arpa query being
+Since {{!RFC7050}} was published, there have been a number of developments
+in secure DNS channels, including DoT {{!RFC7858}}, DoH {{!RFC8484}}, and DoQ
+{{!RFC9250}}. These are more appropriate ways to provide a
+secure channel that a node can use to gain trust in the "ipv4only.arpa" query being
 answered by the network's designated DNS64 {{?RFC6147}} server. This document 
 updates {{!RFC7050}} to redefine "secure channel" and specify requirements for networks
 and client nodes to determine whether the channel between the DNS64 server and the 
 client node can be considered secure for trusting the discovered IPv6
 translation prefix.
 
-# Terminology
+
+
+# Conventions and Definitions
+
+{::boilerplate bcp14-tagged}
+
+This document defines the following term:
 
 Name-Validating Encrypted DNS Protocols:
    Any standardized encrypted DNS protocol that allows a DNS client to use a
@@ -68,11 +74,11 @@ Name-Validating Encrypted DNS Protocols:
    either directly, indirectly through HTTPS, or through QUIC's use of the TLS
    handshake as described in {{?RFC9001}}.
 
-# Explanation of changes
+# Explanation of Changes
 
-## Redefining secure channel
+## Redefining Secure Channel
 
-The previous definition of "secure channel" was not uniformly supported
+The RFC7050 definition of "secure channel" was not uniformly supported
 by vendors. In comparison, DNS servers at the time of this writing are widely
 adopting support for Name-Validating Encrypted DNS Protocols, as are OS vendors
 who act as the validating nodes. This means there is no need to provide
@@ -307,9 +313,7 @@ NEW TEXT:
 
 ===
 
-# Conventions and Definitions
 
-{::boilerplate bcp14-tagged}
 
 
 # Security Considerations
