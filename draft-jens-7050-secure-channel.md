@@ -1,5 +1,5 @@
 ---
-title: "Redefining Secure Channel for ipv4only.arpa IPv6 Prefix Discovery"
+title: "Secure Channels for ipv4only.arpa IPv6 Prefix Discovery"
 abbrev: "7050-secure-channel"
 category: std
 updates: "7050"
