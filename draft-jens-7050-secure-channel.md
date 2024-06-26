@@ -4,7 +4,7 @@ abbrev: "7050-secure-channel"
 category: std
 updates: "7050"
 
-docname: draft-jens-7050-secure-channel-00
+docname: draft-jens-7050-secure-channel-latest
 submissiontype: IETF
 v: 3
 keyword:
