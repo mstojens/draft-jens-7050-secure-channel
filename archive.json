@@ -1,0 +1,149 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-06-27T01:22:18.121094+00:00",
+  "repo": "mstojens/draft-jens-7050-secure-channel",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOMI-9hM5zdKsB",
+      "title": "Editorial suggestions for draft",
+      "url": "https://github.com/mstojens/draft-jens-7050-secure-channel/pull/1",
+      "state": "MERGED",
+      "author": "justinsapp",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Just some editorial suggestions that might improve clarity. Feel free to reject, or take any pieces that you like \ud83d\ude42",
+      "createdAt": "2024-06-25T07:16:28Z",
+      "updatedAt": "2024-06-25T17:08:53Z",
+      "baseRepository": "mstojens/draft-jens-7050-secure-channel",
+      "baseRefName": "main",
+      "baseRefOid": "dcce12d4c42826b2504b08fda41e0950d9be9109",
+      "headRepository": "justinsapp/draft-jens-7050-secure-channel",
+      "headRefName": "main",
+      "headRefOid": "f850aba0e0bc121f9c06d2b002904b18249a901e",
+      "closedAt": "2024-06-25T17:08:53Z",
+      "mergedAt": "2024-06-25T17:08:53Z",
+      "mergedBy": "mstojens",
+      "mergeCommit": {
+        "oid": "280c07bb6da6e795f814c1f33261dcd5f5fa21fc"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOMI-9hM5_gxl4",
+          "commit": {
+            "abbreviatedOid": "f850aba"
+          },
+          "author": "mstojens",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "This is an incredible amount of added editorial rigor, and I appreciate the significant clarifications to the name logic. LGTM, I'll copy the revised definition as you called out in a follow up commit.",
+          "createdAt": "2024-06-25T17:08:38Z",
+          "updatedAt": "2024-06-25T17:08:38Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOMI-9hM5zqPwx",
+      "title": "tweak abstract",
+      "url": "https://github.com/mstojens/draft-jens-7050-secure-channel/pull/2",
+      "state": "OPEN",
+      "author": "boucadair",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-26T16:36:21Z",
+      "updatedAt": "2024-06-26T16:36:22Z",
+      "baseRepository": "mstojens/draft-jens-7050-secure-channel",
+      "baseRefName": "main",
+      "baseRefOid": "c81a0fe0a97b69cef71cd20e639475c4d057bb01",
+      "headRepository": "boucadair/draft-jens-7050-secure-channel",
+      "headRefName": "patch-1",
+      "headRefOid": "e43c5e644769aecf8d31f7c59da0fed03aa8d1cd",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOMI-9hM5zqQOm",
+      "title": "The old def still applies",
+      "url": "https://github.com/mstojens/draft-jens-7050-secure-channel/pull/3",
+      "state": "OPEN",
+      "author": "boucadair",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "The examples may not be all needed, but the def in 2.2 of 7050 is still OK",
+      "createdAt": "2024-06-26T16:37:41Z",
+      "updatedAt": "2024-06-26T16:37:42Z",
+      "baseRepository": "mstojens/draft-jens-7050-secure-channel",
+      "baseRefName": "main",
+      "baseRefOid": "c81a0fe0a97b69cef71cd20e639475c4d057bb01",
+      "headRepository": "boucadair/draft-jens-7050-secure-channel",
+      "headRefName": "main",
+      "headRefOid": "0dbcf56ebdb5d66aa94bd28535df51b63e10aa8c",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
