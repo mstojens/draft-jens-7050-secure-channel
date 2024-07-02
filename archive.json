@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-30T01:26:41.264508+00:00",
+  "timestamp": "2024-07-02T01:20:50.550084+00:00",
   "repo": "mstojens/draft-jens-7050-secure-channel",
   "labels": [
     {
@@ -49,7 +49,24 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 4,
+      "id": "I_kwDOMI-9hM6OJFRg",
+      "title": "add a MAY for falling back when DNR is not available or encrypted DNS fails",
+      "url": "https://github.com/mstojens/draft-jens-7050-secure-channel/issues/4",
+      "state": "OPEN",
+      "author": "mstojens",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-01T21:11:20Z",
+      "updatedAt": "2024-07-01T21:11:20Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
